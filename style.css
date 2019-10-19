@@ -1,0 +1,76 @@
+@import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/4. Build/UI/normalize.css);
+.container {
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container header {
+  text-align: center;
+}
+
+.container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: fixed;
+}
+
+.container header nav .nav-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header nav .nav-center #nav-logo {
+  margin-right: 1%;
+}
+
+.container header nav .search input {
+  width: 75%;
+}
+
+.container main {
+  margin-top: 3%;
+}
+
+.container main h3 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.container main p {
+  text-align: center;
+}
+
+.container main .sect {
+  border: 2px dashed darkblue;
+  margin-top: 3.765%;
+}
+
+.container footer {
+  text-align: center;
+  color: grey;
+  margin-top: 4%;
+}
+/*# sourceMappingURL=style.css.map */

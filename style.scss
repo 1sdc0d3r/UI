@@ -1,0 +1,85 @@
+@import "./normalize.css";
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  header {
+    text-align: center;
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid red;
+      align-items: center;
+      justify-content: space-between;
+      display: fixed;
+      #drop-down-img {
+        // margin-right: 15%;
+      }
+      .nav-center {
+        display: flex;
+        align-items: center;
+
+        #nav-logo {
+          margin-right: 1%;
+        }
+        h1 {
+        }
+      }
+      .search {
+        i {
+        }
+        input {
+          width: 75%;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 3%;
+    h3 {
+      margin-top: 5%;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .sect {
+      border: 2px dashed darkblue;
+      margin-top: 3.765%;
+    }
+    .first-sect {
+      h3 {
+      }
+      p {
+      }
+    }
+    .second-sect {
+      h3 {
+      }
+      p {
+      }
+    }
+    .third-sect {
+      h3 {
+      }
+      p {
+      }
+    }
+    .fourth-sect {
+      h3 {
+      }
+      p {
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    color: grey;
+    margin-top: 4%;
+    span {
+    }
+  }
+}
