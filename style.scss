@@ -1,10 +1,16 @@
 @import "./normalize.css";
 
+// - Global Styles
+.show {
+  display: block !important;
+}
+
 .container {
   width: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;
+
   header {
     text-align: center;
 
@@ -15,8 +21,35 @@
       align-items: center;
       justify-content: space-between;
       display: fixed;
-      #drop-down-img {
-        // margin-right: 15%;
+      .nav-dropdown {
+        position: relative;
+        display: inline-block;
+        #hamburgerMenu {
+          width: 3rem;
+          height: 3rem;
+          cursor: pointer;
+        }
+
+        #navDropDown {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          background: rgb(192, 192, 192);
+          border: 1px solid black;
+          padding: 0.5rem;
+
+          a {
+            color: rgb(68, 155, 68);
+            text-decoration: none;
+            display: block;
+            // background: grey;
+            padding: 1%;
+            margin: 3%;
+            &:hover {
+              color: yellow;
+            }
+          }
+        }
       }
       .nav-center {
         display: flex;

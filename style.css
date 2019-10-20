@@ -1,4 +1,8 @@
 @import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/4. Build/UI/normalize.css);
+.show {
+  display: block !important;
+}
+
 .container {
   width: 95%;
   margin: auto;
@@ -31,6 +35,38 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: fixed;
+}
+
+.container header nav .nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.container header nav .nav-dropdown #hamburgerMenu {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.container header nav .nav-dropdown #navDropDown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: silver;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.container header nav .nav-dropdown #navDropDown a {
+  color: #449b44;
+  text-decoration: none;
+  display: block;
+  padding: 1%;
+  margin: 3%;
+}
+
+.container header nav .nav-dropdown #navDropDown a:hover {
+  color: yellow;
 }
 
 .container header nav .nav-center {

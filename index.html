@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="./style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="./navDropDown.js" type="text/javascript"></script>
     <title>Bud Cabinet</title>
   </head>
   <body class="container">
     <header>
       <nav>
-        <img id="drop-down-img" src="./img" alt="Dropdown Menu" />
+        <div class="nav-dropdown">
+          <img
+            id="hamburgerMenu"
+            src="./img/menu-leaf.png"
+            alt="Dropdown Menu"
+          />
+          <div id="navDropDown" class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">Cabinet</a>
+            <a href="#">Explore</a>
+            <a href="#">Weed101</a>
+            <a href="#">Weed Maps</a>
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+
         <!--todo put 3 line img dropdown here-->
         <div class="nav-center">
           <img id="nav-logo" src="logo" alt="Logo" />
@@ -18,9 +38,8 @@
           <h1>MED CABINET</h1>
         </div>
         <div class="search">
-          <i>icon</i>
+          <i class="fa fa-search"><input type="text" placeholder="SEARCH"/></i>
           <!--todo GET MAGNIFYING GLASS ICON-->
-          <input type="text" placeholder="SEARCH" />
         </div>
       </nav>
     </header>
