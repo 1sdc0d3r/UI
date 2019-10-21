@@ -21,9 +21,14 @@
       align-items: center;
       justify-content: space-between;
       display: fixed;
+      width: 100%;
+
       .nav-dropdown {
         position: relative;
         display: inline-block;
+        width: 32%;
+        align-content: center;
+
         #hamburgerMenu {
           width: 3rem;
           height: 3rem;
@@ -54,18 +59,23 @@
       .nav-center {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 32%;
 
         #nav-logo {
-          margin-right: 1%;
+          width: 2.5rem;
         }
         h1 {
+          width: 80%;
         }
       }
       .search {
+        width: 32%;
+
         i {
         }
         input {
-          width: 75%;
+          width: 65%;
         }
       }
     }
@@ -111,7 +121,7 @@
   footer {
     text-align: center;
     color: grey;
-    margin-top: 4%;
+    margin-top: 10%;
     span {
     }
   }
