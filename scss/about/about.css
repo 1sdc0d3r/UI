@@ -35,6 +35,11 @@ main #team.fourth-sect.sect .tm img {
   margin-right: 5%;
 }
 
+main #team.fourth-sect.sect .tm .tm-a h4 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
 main #team.fourth-sect.sect .tm .tm-c p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +50,8 @@ main #team.fourth-sect.sect .tm .tm-c p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 main #team.fourth-sect.sect .tm .tm-c p .fa-github {

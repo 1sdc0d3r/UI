@@ -80,6 +80,7 @@
     border: none;
     position: relative;
     left: auto;
+    width: 100%;
   }
 }
 
@@ -182,6 +183,7 @@
   .container header nav .login form .loginbtn button {
     font-size: 1.2rem;
     width: 30%;
+    border-radius: 7%;
   }
 }
 
@@ -224,7 +226,13 @@
 .container main .first-sect h3 {
   font-size: 2rem;
   color: #069c06;
-  text-shadow: 1px 2px white;
+  text-shadow: 1.5px 2.125px white;
+}
+
+@media (min-width: 1000px) {
+  .container main .first-sect h3 {
+    font-size: 3rem;
+  }
 }
 
 .container main .first-sect form {
@@ -250,23 +258,33 @@
   font-size: 1.125rem;
   color: #449e44;
   font-weight: bold;
-  text-shadow: white 0px 1px;
+  text-shadow: white 1.5px 1.5px;
+}
+
+@media (min-width: 1000px) {
+  .container main .first-sect form .name label {
+    font-size: 2rem;
+  }
 }
 
 .container main .first-sect form .name input::-webkit-input-placeholder {
   color: #d88c00;
+  text-align: center;
 }
 
 .container main .first-sect form .name input:-ms-input-placeholder {
   color: #d88c00;
+  text-align: center;
 }
 
 .container main .first-sect form .name input::-ms-input-placeholder {
   color: #d88c00;
+  text-align: center;
 }
 
 .container main .first-sect form .name input::placeholder {
   color: #d88c00;
+  text-align: center;
 }
 
 .container main .first-sect form .name .first-name {
@@ -275,6 +293,12 @@
 
 .container main .first-sect form .name .first-name input {
   border: 1px solid black;
+}
+
+@media (min-width: 1000px) {
+  .container main .first-sect form .name .first-name input {
+    font-size: 1rem;
+  }
 }
 
 .container main .first-sect form .name .last-name {
@@ -287,23 +311,56 @@
   color: #428542;
 }
 
+@media (min-width: 1000px) {
+  .container main .first-sect form .name .last-name label {
+    font-size: 2rem;
+  }
+}
+
 .container main .first-sect form .name .last-name input {
   border: 1px solid black;
 }
 
+@media (min-width: 1000px) {
+  .container main .first-sect form .name .last-name input {
+    font-size: 1rem;
+  }
+}
+
 .container main .first-sect form .email {
   margin-top: 2.5%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container main .first-sect form .email label {
   font-size: 1.125rem;
   font-weight: bold;
   color: #449e44;
-  text-shadow: white 0px 1px;
+  text-shadow: white 1.5px 1.5px;
+}
+
+@media (min-width: 1000px) {
+  .container main .first-sect form .email label {
+    font-size: 2rem;
+  }
 }
 
 .container main .first-sect form .email input {
   border: 1px solid black;
+}
+
+@media (min-width: 1000px) {
+  .container main .first-sect form .email input {
+    font-size: 1rem;
+    width: 100%;
+  }
 }
 
 .container main .first-sect form .email input::-webkit-input-placeholder {
@@ -334,11 +391,29 @@
   font-size: 1.65rem;
 }
 
+@media (min-width: 1000px) {
+  .container main .desktop-feat-goal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 5.2%;
+  }
+}
+
 .container main .second-sect {
   margin-top: 3.765%;
   margin-bottom: 3%;
   border: 2.135px groove red;
   border-radius: 1% 15% 1% 15%;
+}
+
+@media (min-width: 1000px) {
+  .container main .second-sect {
+    width: 45%;
+    margin: auto;
+  }
 }
 
 .container main .second-sect .features {
@@ -362,12 +437,10 @@
   padding: 5% 0px;
 }
 
-.container main .second-sect .features .ft2 {
-  margin-left: 10%;
-}
-
-.container main .second-sect .features .ft2 ul li {
-  color: green;
+@media (min-width: 1000px) {
+  .container main .second-sect .features .ft1 ul li {
+    color: black;
+  }
 }
 
 .container main .third-sect {
@@ -375,6 +448,13 @@
   margin-top: 3.765%;
   margin: auto;
   border-radius: 20% 1% 20% 1%;
+}
+
+@media (min-width: 1000px) {
+  .container main .third-sect {
+    width: 45%;
+    margin: auto;
+  }
 }
 
 .container main .third-sect h2 {
@@ -386,26 +466,6 @@
   padding: 1% 1.5%;
 }
 
-.container main .fourth-sect {
-  margin-top: 3.765%;
-}
-
-.container main .fourth-sect .tm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container main .fourth-sect .tm .tm-ac {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .container footer {
   text-align: center;
   color: grey;
@@ -413,6 +473,8 @@
 }
 
 .container footer #easterEgg {
-  color: #e7e7e7;
+  color: #e6e4e4;
+  position: absolute;
+  left: 4%;
 }
 /*# sourceMappingURL=style.css.map */
