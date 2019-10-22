@@ -1,0 +1,54 @@
+* {
+  background: #e4f6ec;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+main #team.fourth-sect.sect {
+  z-index: 100;
+  margin: auto;
+  width: 95%;
+}
+
+main #team.fourth-sect.sect .tm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #team.fourth-sect.sect .tm img {
+  width: 65px;
+  height: 65px;
+  margin-right: 5%;
+}
+
+main #team.fourth-sect.sect .tm .tm-c p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #team.fourth-sect.sect .tm .tm-c p .fa-github {
+  margin-left: 35%;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,55 @@
+* {
+  //   border: 1px solid red;
+  background: rgb(228, 246, 236);
+}
+main {
+  //   border: 1px solid red;
+
+  width: 100%;
+  margin: auto;
+  #team.fourth-sect.sect {
+    z-index: 100;
+    // border: 1px solid orange;
+    margin: auto;
+    width: 95%;
+    h3 {
+    }
+    .tm {
+      //   border: 1px solid blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 65px;
+        height: 65px;
+        margin-right: 5%;
+      }
+      .tm-ac {
+      }
+      .tm-a {
+        p {
+        }
+      }
+      .tm-c {
+        // border: 1px solid green;
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          //   border: 1px solid red;
+          .fa-github {
+            margin-left: 35%;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  span {
+  }
+  #easterEgg {
+  }
+}
