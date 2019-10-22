@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./navDropDown.js" type="text/javascript"></script>
     <title>Bud Cabinet</title>
   </head>
@@ -18,70 +22,162 @@
         <div class="nav-dropdown">
           <img
             id="hamburgerMenu"
-            src="./img/menu-leaf.png"
+            src="./img/hamburgerIcon.jpg"
             alt="Dropdown Menu"
           />
           <div id="navDropDown" class="dropdown-content">
             <a href="#">Home</a>
-            <a href="#">Cabinet</a>
+            <!-- <a href="#">Cabinet</a>
             <a href="#">Explore</a>
             <a href="#">Weed101</a>
-            <a href="#">Weed Maps</a>
-            <a href="#">Contact us</a>
+            <a href="#">Weed Maps</a> -->
+            <a href="#">Dispensaries</a>
+            <a href="#team">About us</a>
           </div>
         </div>
 
-        <!--todo put 3 line img dropdown here-->
         <div class="nav-center">
-          <!-- <img id="nav-logo" src="./img/menu-leaf.png" alt="Logo" /> -->
-          <!--todo GET LOGO IMG FOR HERE-->
+          <img id="nav-logo" src="./img/menu-leaf.png" alt="Logo" />
           <h1>MED CABINET</h1>
         </div>
-        <div class="search">
-          <i class="fa fa-search"><input type="text" placeholder="SEARCH"/></i>
+        <div class="login">
+          <form action="#" method="post">
+            <!-- todo GET LINK FOR LOGIN HERE -->
+            <div class="usrname">
+              <!-- <label>Username</label> -->
+              <input type="text" placeholder="Username" />
+            </div>
+            <!-- <label>Password</label> -->
+            <input type="text" placeholder="Password" />
+            <div class="loginbtn">
+              <button type="submit" id="login">Login</button>
+              <!-- <button type="submit">Sign Up</button> -->
+            </div>
+          </form>
         </div>
       </nav>
     </header>
     <main>
       <div class="first-sect sect">
-        <h3>Title here</h3>
+        <!--? <img src="./img/pills-bud.jpg"> -->
+        <h3>Get Started</h3>
+        <form action="#" method="post">
+          <!-- todo GET LINK FOR SIGN UP HERE -->
+          <div class="name">
+            <div class="first-name">
+              <label>First Name</label>
+              <input type="text" placeholder="Mary" required />
+            </div>
+            <div class="last-name">
+              <label>Last Name</label>
+              <input type="text" placeholder="Jane" required />
+            </div>
+          </div>
+          <div class="email">
+            <label>Email: </label>
+            <input type="text" placeholder="mary@medcabinet.com" required />
+          </div>
+          <button type="submit">Sign Up!</button>
+        </form>
+      </div>
+      <!-- ************************************************** -->
+      <div class="about-app">
+        <h1>What is Med Cabinet?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          temporibus doloribus quas, aut voluptas quia accusamus, quod iste
-          voluptatum placeat eveniet. Vitae nisi exercitationem error ut soluta
-          possimus porro ipsum!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          necessitatibus aspernatur laborum distinctio ad ut repellendus quasi
+          quos id facere sit unde fugiat, pariatur quae? Ipsum dolores placeat
+          veritatis eum.
         </p>
       </div>
+
       <div class="second-sect sect">
-        <h3>Second Title</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et
-          numquam inventore tempora. At ipsam veritatis nam? Numquam iure
-          placeat ipsam, repudiandae doloremque quasi debitis temporibus id ea
-          doloribus cupiditate.
-        </p>
+        <h3>Features</h3>
+        <div class="features">
+          <div class="ft1">
+            <ul>
+              <!-- <li class="featureTitle">Features</li> -->
+              <li>Save your favorite strains</li>
+              <li>Store comments and notes on each strain</li>
+              <li>Personalized Recommended strains</li>
+              <li>Find the nearest dispensary near you</li>
+              <li>Feature</li>
+            </ul>
+          </div>
+          <!-- <div class="ft2">
+            <ul>
+              <li id="featureTitle">Features Coming Soon</li>
+              <li>Feature</li>
+              <li>Feature</li>
+              <li>Feature</li>
+              <li>Feature</li>
+              <li>Feature</li>
+            </ul>
+          </div> -->
+        </div>
       </div>
       <div class="third-sect sect">
-        <h3>Third Sect Title</h3>
+        <h2>Our Goal</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-          perspiciatis non ab, ipsum rerum consequuntur, dignissimos a in
-          laudantium voluptatum facere inventore sequi sunt neque dolor atque
-          dolorum beatae eveniet.
+          Provide people with accurate and reliable information so they can make
+          an informed decision when choosing a strain for their needs.
         </p>
       </div>
-      <div class="fourth-sect sect">
-        <h3>Fourth Section</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
-          quae rem fugiat provident eos itaque ratione maxime quaerat dicta ex
-          dolores quas quia architecto magnam laboriosam ab tenetur, facere
-          laborum.
-        </p>
+
+      <div class="fourth-sect sect" id="team">
+        <h3>About the Team</h3>
+        <div class="tm">
+          <img src="#" />
+          <div class="tm-ac">
+            <div class="tm-a">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, modi quaerat sunt
+              </p>
+            </div>
+            <div class="tm-c">
+              <p>
+                contact info here
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tm">
+          <img src="#" />
+          <div class="tm-ac">
+            <div class="tm-a">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, modi quaerat sunt
+              </p>
+            </div>
+            <div class="tm-c">
+              <p>
+                contact info here
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tm">
+          <img src="#" />
+          <div class="tm-ac">
+            <div class="tm-a">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, modi quaerat sunt
+              </p>
+            </div>
+            <div class="tm-c">
+              <p>
+                contact info here
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-      <span>&copy; 2019</span>
+      <span>&copy;2019 MED CABINET</span>
       <span>1sdc0d3r</span>
     </footer>
   </body>

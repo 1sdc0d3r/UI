@@ -27,7 +27,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid red;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -36,37 +35,43 @@
           justify-content: space-between;
   display: fixed;
   width: 100%;
+  z-index: 1;
+  margin-top: 1%;
 }
 
 .container header nav .nav-dropdown {
   position: relative;
   display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 32%;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: left;
+      align-content: left;
 }
 
 .container header nav .nav-dropdown #hamburgerMenu {
   width: 3rem;
-  height: 3rem;
   cursor: pointer;
 }
 
 .container header nav .nav-dropdown #navDropDown {
   display: none;
   position: absolute;
-  z-index: 1;
   background: silver;
   border: 1px solid black;
   padding: 0.5rem;
+  left: 29.5%;
 }
 
 .container header nav .nav-dropdown #navDropDown a {
   color: #449b44;
   text-decoration: none;
   display: block;
+  text-align: center;
   padding: 1%;
-  margin: 3%;
+  margin: 3% 5%;
 }
 
 .container header nav .nav-dropdown #navDropDown a:hover {
@@ -87,19 +92,47 @@
 }
 
 .container header nav .nav-center #nav-logo {
-  width: 2.5rem;
+  width: 3rem;
+  margin-right: 3%;
+  -webkit-transform: rotateZ(12deg);
+          transform: rotateZ(12deg);
 }
 
 .container header nav .nav-center h1 {
-  width: 80%;
+  font-family: "Permanent Marker", cursive;
 }
 
-.container header nav .search {
+.container header nav .login {
   width: 32%;
+  margin-top: 2%;
 }
 
-.container header nav .search input {
-  width: 65%;
+.container header nav .login form .usrname input {
+  width: 75%;
+  margin-bottom: 2.35%;
+}
+
+.container header nav .login form input {
+  width: 75%;
+}
+
+.container header nav .login form .loginbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.container header nav .login form .loginbtn #login {
+  margin-right: 1rem;
+}
+
+.container header nav .login form .loginbtn button {
+  border: 1.15px solid black;
+  background: #ffd17a;
 }
 
 .container main {
@@ -116,8 +149,203 @@
 }
 
 .container main .sect {
-  border: 2px dashed darkblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main .first-sect {
+  background-image: url(./img/pills-bud.jpg);
+  background-repeat: none;
+  background-size: 100%;
+  border-radius: 2.5%;
+  padding-bottom: 8%;
+}
+
+.container main .first-sect img {
+  height: 100%;
+  z-index: -1;
+}
+
+.container main .first-sect h3 {
+  font-size: 2rem;
+  color: #069c06;
+}
+
+.container main .first-sect form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .first-sect form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container main .first-sect form .name label {
+  font-size: 1.125rem;
+  color: #449e44;
+  font-weight: bold;
+}
+
+.container main .first-sect form .name input::-webkit-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .name input:-ms-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .name input::-ms-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .name input::placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .name .first-name {
+  text-align: center;
+}
+
+.container main .first-sect form .name .first-name input {
+  border: 1px solid black;
+}
+
+.container main .first-sect form .name .last-name {
+  text-align: center;
+  margin-left: 1%;
+}
+
+.container main .first-sect form .name .last-name label {
+  font-size: 1.125rem;
+  color: #428542;
+}
+
+.container main .first-sect form .name .last-name input {
+  border: 1px solid black;
+}
+
+.container main .first-sect form .email {
+  margin-top: 2.5%;
+}
+
+.container main .first-sect form .email label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #449e44;
+}
+
+.container main .first-sect form .email input {
+  border: 1px solid black;
+}
+
+.container main .first-sect form .email input::-webkit-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .email input:-ms-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .email input::-ms-input-placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form .email input::placeholder {
+  color: #d88c00;
+}
+
+.container main .first-sect form button {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  color: #07aa07;
+  border-radius: 15%;
+}
+
+.container main .second-sect {
   margin-top: 3.765%;
+  margin-bottom: 3%;
+  border: 2.135px groove red;
+  border-radius: 1% 15% 1% 15%;
+}
+
+.container main .second-sect .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container main .second-sect .features #featureTitle {
+  list-style-type: none;
+}
+
+.container main .second-sect .features .ft1 ul li {
+  color: green;
+  padding: 5% 0px;
+}
+
+.container main .second-sect .features .ft2 {
+  margin-left: 10%;
+}
+
+.container main .second-sect .features .ft2 ul li {
+  color: green;
+}
+
+.container main .third-sect {
+  background: #7575c3;
+  margin-top: 3.765%;
+  margin: auto;
+}
+
+.container main .third-sect h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.container main .third-sect p {
+  padding: 1% 1.5%;
+}
+
+.container main .fourth-sect {
+  margin-top: 3.765%;
+  width: 80%;
+}
+
+.container main .fourth-sect .tm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container main .fourth-sect .tm .tm-ac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container footer {
