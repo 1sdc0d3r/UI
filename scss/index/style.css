@@ -82,6 +82,7 @@
     position: relative;
     left: auto;
     width: 100%;
+    background: #e4f6ec !important;
   }
 }
 
@@ -103,6 +104,8 @@
   .container header nav .nav-dropdown #navDropDown a {
     font-size: 1.35rem;
     margin: auto;
+    background: silver;
+    background: #e4f6ec !important;
   }
 }
 
