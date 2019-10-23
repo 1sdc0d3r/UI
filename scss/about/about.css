@@ -11,23 +11,32 @@ main #team.fourth-sect.sect {
   z-index: 100;
   margin: auto;
   width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-main #team.fourth-sect.sect .col-1 {
-  width: 45%;
-  margin: auto;
+@media (min-width: 1000px) {
+  main #team.fourth-sect.sect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
-main #team.fourth-sect.sect .col-2 {
-  width: 45%;
-  margin: auto;
+@media (min-width: 1000px) {
+  main #team.fourth-sect.sect .col-1 {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  main #team.fourth-sect.sect .col-2 {
+    width: 45%;
+    margin: auto;
+  }
 }
 
 main #team.fourth-sect.sect .tm {

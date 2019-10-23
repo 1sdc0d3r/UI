@@ -18,17 +18,24 @@ main {
     // border: 1px solid orange;
     margin: auto;
     width: 95%;
-    display: flex;
-    flex-direction: row;
+    @include for-desktop() {
+      display: flex;
+      flex-direction: row;
+    }
+
     h3 {
     }
     .col-1 {
-      width: 45%;
-      margin: auto;
+      @include for-desktop() {
+        width: 45%;
+        margin: auto;
+      }
     }
     .col-2 {
-      width: 45%;
-      margin: auto;
+      @include for-desktop() {
+        width: 45%;
+        margin: auto;
+      }
     }
     .tm {
       //   border: 1px solid blue;
