@@ -11,6 +11,23 @@ main #team.fourth-sect.sect {
   z-index: 100;
   margin: auto;
   width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #team.fourth-sect.sect .col-1 {
+  width: 45%;
+  margin: auto;
+}
+
+main #team.fourth-sect.sect .col-2 {
+  width: 45%;
+  margin: auto;
 }
 
 main #team.fourth-sect.sect .tm {
@@ -27,12 +44,18 @@ main #team.fourth-sect.sect .tm {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0.25%;
 }
 
 main #team.fourth-sect.sect .tm img {
   width: 65px;
   height: 65px;
-  margin-right: 5%;
+  margin: auto;
+}
+
+main #team.fourth-sect.sect .tm .tm-ac {
+  width: 80%;
+  margin-right: 2.5%;
 }
 
 main #team.fourth-sect.sect .tm .tm-a h4 {

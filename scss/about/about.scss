@@ -18,7 +18,17 @@ main {
     // border: 1px solid orange;
     margin: auto;
     width: 95%;
+    display: flex;
+    flex-direction: row;
     h3 {
+    }
+    .col-1 {
+      width: 45%;
+      margin: auto;
+    }
+    .col-2 {
+      width: 45%;
+      margin: auto;
     }
     .tm {
       //   border: 1px solid blue;
@@ -26,12 +36,17 @@ main {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin-top: 0.25%;
+
       img {
         width: 65px;
         height: 65px;
-        margin-right: 5%;
+        margin: auto;
       }
       .tm-ac {
+        // border: 1px solid red;
+        width: 80%;
+        margin-right: 2.5%;
       }
       .tm-a {
         h4 {
