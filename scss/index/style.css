@@ -65,7 +65,7 @@
 .container header nav .nav-dropdown #navDropDown {
   display: none;
   position: absolute;
-  background: silver;
+  background: silver !important;
   border: 1px solid black;
   padding: 0.5rem;
   left: 29.5%;
@@ -90,6 +90,7 @@
   display: block;
   text-align: center;
   padding: 1%;
+  background: silver !important;
   margin: 3% 5%;
 }
 
